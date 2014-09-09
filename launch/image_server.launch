@@ -1,0 +1,4 @@
+<launch>
+   <node name="image_server" pkg="image_server" type="image_server_node" output="screen"/>
+   <param name="image_directory" value="/home/liz/Data/GWU"/>
+</launch>
