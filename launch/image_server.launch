@@ -1,4 +1,11 @@
 <launch>
    <node name="image_server" pkg="image_server" type="image_server_node" output="screen"/>
    <param name="image_directory" value="/home/liz/Data/GWU"/>
+   <param name="left_frame_id" value="/camera/left"/>
+   <param name="right_frame_id" value="/camera/right"/>
+   <param name="left_calibration_file" value="file:///home/liz/Data/GWU/camera_left.ini"/>
+   <param name="right_calibration_file" value="file:///home/liz/Data/GWU/camera_right.ini"/>
+   <param name="regex_left" value="^left_\d*\.(bmp|jpeg|gif|png|jpg|pgm)"/>
+   <param name="regex_right" value="^right_\d*\.(bmp|jpeg|gif|png|jpg|pgm)"/>
+   <param name="publish_rate" value="10"/>
 </launch>

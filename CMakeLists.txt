@@ -6,6 +6,8 @@ project(image_server)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
   cv_bridge
+  camera_calibration_parsers
+  camera_info_manager
   image_transport
   roscpp
 )
